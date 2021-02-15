@@ -7,14 +7,14 @@
 
 import Foundation
 
-class NutrientModel {
-    var energy: Double
-    var protein: Double
-    var fat: Double
-    var carbs: Double
-    var fiber: Double
+public class NutrientModel {
+    public var energy: Double
+    public var protein: Double
+    public var fat: Double
+    public var carbs: Double
+    public var fiber: Double
     
-    init(energy: Double, protein: Double, fat: Double, carbs: Double, fiber: Double) {
+    public init(energy: Double, protein: Double, fat: Double, carbs: Double, fiber: Double) {
         self.energy = energy
         self.protein = protein
         self.fat = fat
