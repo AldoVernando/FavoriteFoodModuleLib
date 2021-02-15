@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import FoodCatalogueModule
 
 protocol FavoriteFoodPresenterProtocol {
     func getFavoriteFood() -> Observable<[FoodModel]>

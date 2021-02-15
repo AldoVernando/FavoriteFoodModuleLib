@@ -24,6 +24,7 @@ s.dependency 'Alamofire'
 s.dependency 'RealmSwift'
 s.dependency 'SDWebImage'
 s.dependency 'RxSwift'
+s.dependency 'FoodCatalogueModule', :git => 'https://github.com/AldoVernando/FavoriteFoodModuleLib.git'
  
 #s.resources = "Core/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
  
