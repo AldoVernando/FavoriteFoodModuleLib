@@ -10,6 +10,13 @@
 		B53532F525DA8FD900592F8B /* FavoriteFoodModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53532EB25DA8FD900592F8B /* FavoriteFoodModule.framework */; };
 		B53532FA25DA8FD900592F8B /* FavoriteFoodModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53532F925DA8FD900592F8B /* FavoriteFoodModuleTests.swift */; };
 		B53532FC25DA8FD900592F8B /* FavoriteFoodModule.h in Headers */ = {isa = PBXBuildFile; fileRef = B53532EE25DA8FD900592F8B /* FavoriteFoodModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B535330E25DA905800592F8B /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535330D25DA905800592F8B /* FoodRepository.swift */; };
+		B535331225DA908700592F8B /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535331125DA908700592F8B /* LocaleDataSource.swift */; };
+		B535331625DA90A200592F8B /* FoodEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535331525DA90A200592F8B /* FoodEntity.swift */; };
+		B535332325DA90F900592F8B /* FoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535332225DA90F900592F8B /* FoodInteractor.swift */; };
+		B535332825DA911700592F8B /* FavoriteFoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535332725DA911700592F8B /* FavoriteFoodPresenter.swift */; };
+		B535332F25DA917400592F8B /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535332E25DA917400592F8B /* Injection.swift */; };
+		B535333625DA91D000592F8B /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535333525DA91D000592F8B /* FoodModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		B53532F425DA8FD900592F8B /* FavoriteFoodModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoriteFoodModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53532F925DA8FD900592F8B /* FavoriteFoodModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodModuleTests.swift; sourceTree = "<group>"; };
 		B53532FB25DA8FD900592F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B535330D25DA905800592F8B /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
+		B535331125DA908700592F8B /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
+		B535331525DA90A200592F8B /* FoodEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntity.swift; sourceTree = "<group>"; };
+		B535332225DA90F900592F8B /* FoodInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInteractor.swift; sourceTree = "<group>"; };
+		B535332725DA911700592F8B /* FavoriteFoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodPresenter.swift; sourceTree = "<group>"; };
+		B535332E25DA917400592F8B /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		B535333525DA91D000592F8B /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,9 @@
 		B53532ED25DA8FD900592F8B /* FavoriteFoodModule */ = {
 			isa = PBXGroup;
 			children = (
+				B535330725DA8FF400592F8B /* Data */,
+				B535330825DA8FF900592F8B /* Domain */,
+				B535330925DA900200592F8B /* Presentation */,
 				B53532EE25DA8FD900592F8B /* FavoriteFoodModule.h */,
 				B53532EF25DA8FD900592F8B /* Info.plist */,
 			);
@@ -84,6 +101,90 @@
 				B53532FB25DA8FD900592F8B /* Info.plist */,
 			);
 			path = FavoriteFoodModuleTests;
+			sourceTree = "<group>";
+		};
+		B535330725DA8FF400592F8B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B535330A25DA901400592F8B /* Repository */,
+				B535330B25DA901900592F8B /* Data Source */,
+				B535330C25DA902100592F8B /* Entities */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B535330825DA8FF900592F8B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B535333425DA91C700592F8B /* Model */,
+				B535331925DA90C400592F8B /* Interactor */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B535330925DA900200592F8B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B535332D25DA916500592F8B /* Dependency Injection */,
+				B535332625DA910100592F8B /* Presenter */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B535330A25DA901400592F8B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B535330D25DA905800592F8B /* FoodRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B535330B25DA901900592F8B /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				B535331125DA908700592F8B /* LocaleDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		B535330C25DA902100592F8B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B535331525DA90A200592F8B /* FoodEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B535331925DA90C400592F8B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B535332225DA90F900592F8B /* FoodInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B535332625DA910100592F8B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B535332725DA911700592F8B /* FavoriteFoodPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B535332D25DA916500592F8B /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				B535332E25DA917400592F8B /* Injection.swift */,
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		B535333425DA91C700592F8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B535333525DA91D000592F8B /* FoodModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +248,7 @@
 				TargetAttributes = {
 					B53532EA25DA8FD900592F8B = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					B53532F325DA8FD900592F8B = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B535331225DA908700592F8B /* LocaleDataSource.swift in Sources */,
+				B535330E25DA905800592F8B /* FoodRepository.swift in Sources */,
+				B535332325DA90F900592F8B /* FoodInteractor.swift in Sources */,
+				B535332F25DA917400592F8B /* Injection.swift in Sources */,
+				B535331625DA90A200592F8B /* FoodEntity.swift in Sources */,
+				B535332825DA911700592F8B /* FavoriteFoodPresenter.swift in Sources */,
+				B535333625DA91D000592F8B /* FoodModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +450,7 @@
 		B535330025DA8FD900592F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LR4V7R375P;
@@ -357,6 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aldovernando.FavoriteFoodModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +476,7 @@
 		B535330125DA8FD900592F8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LR4V7R375P;
@@ -389,6 +501,7 @@
 		B535330325DA8FD900592F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR4V7R375P;
 				INFOPLIST_FILE = FavoriteFoodModuleTests/Info.plist;
@@ -407,6 +520,7 @@
 		B535330425DA8FD900592F8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR4V7R375P;
 				INFOPLIST_FILE = FavoriteFoodModuleTests/Info.plist;
