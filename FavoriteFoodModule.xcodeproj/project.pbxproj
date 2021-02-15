@@ -17,6 +17,7 @@
 		B535332825DA911700592F8B /* FavoriteFoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535332725DA911700592F8B /* FavoriteFoodPresenter.swift */; };
 		B535332F25DA917400592F8B /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535332E25DA917400592F8B /* Injection.swift */; };
 		B535333625DA91D000592F8B /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535333525DA91D000592F8B /* FoodModel.swift */; };
+		B535335225DA968300592F8B /* NutrientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535335125DA968300592F8B /* NutrientModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B535332725DA911700592F8B /* FavoriteFoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodPresenter.swift; sourceTree = "<group>"; };
 		B535332E25DA917400592F8B /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		B535333525DA91D000592F8B /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		B535335125DA968300592F8B /* NutrientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B535333525DA91D000592F8B /* FoodModel.swift */,
+				B535335125DA968300592F8B /* NutrientModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B535335225DA968300592F8B /* NutrientModel.swift in Sources */,
 				B535331225DA908700592F8B /* LocaleDataSource.swift in Sources */,
 				B535330E25DA905800592F8B /* FoodRepository.swift in Sources */,
 				B535332325DA90F900592F8B /* FoodInteractor.swift in Sources */,
