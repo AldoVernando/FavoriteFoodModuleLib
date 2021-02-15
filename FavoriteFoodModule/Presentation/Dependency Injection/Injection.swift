@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-final class Injection: NSObject {
+public class Injection: NSObject {
     
     private func provideLocaleDataSource() -> LocaleDataSourceProtocol {
         let realm = try? Realm()
@@ -20,7 +20,7 @@ final class Injection: NSObject {
         return FoodRepository(locale: locale)
     }
     
-    func provideInteractor() -> FoodUseCase {
+    public func provideInteractor() -> FoodUseCase {
         let foodRepository = provideRepository()
         return FoodInteractor(repository: foodRepository)
     }

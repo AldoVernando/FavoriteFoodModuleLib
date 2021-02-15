@@ -9,14 +9,14 @@ import Foundation
 import RxSwift
 import FoodCatalogueModule
 
-protocol FoodUseCase {
+public protocol FoodUseCase {
     func getFavoriteFood() -> Observable<[FoodModel]>
     func addFavoriteFood(food: FoodModel) -> Observable<Bool>
     func isFavorite(id: String) -> Bool
     func removeFavoriteFood(id: String) -> Observable<Bool>
 }
 
-class FoodInteractor: FoodUseCase {
+public class FoodInteractor: FoodUseCase {
     
     private let foodRepository: FoodRepositoryProtocol
     
@@ -24,19 +24,19 @@ class FoodInteractor: FoodUseCase {
         self.foodRepository = repository
     }
     
-    func getFavoriteFood() -> Observable<[FoodModel]> {
+    public func getFavoriteFood() -> Observable<[FoodModel]> {
         return foodRepository.getFavoriteFood()
     }
     
-    func addFavoriteFood(food: FoodModel) -> Observable<Bool> {
+    public func addFavoriteFood(food: FoodModel) -> Observable<Bool> {
         return foodRepository.addFavoriteFood(food: food)
     }
     
-    func isFavorite(id: String) -> Bool {
+    public func isFavorite(id: String) -> Bool {
         return foodRepository.isFavorite(id: id)
     }
     
-    func removeFavoriteFood(id: String) -> Observable<Bool> {
+    public func removeFavoriteFood(id: String) -> Observable<Bool> {
         return foodRepository.removeFavoriteFood(id: id)
     }
 }

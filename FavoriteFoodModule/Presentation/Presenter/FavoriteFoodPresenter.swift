@@ -20,8 +20,8 @@ public class FavoriteFoodPresenter: FavoriteFoodPresenterProtocol {
     
     private let foodInteractor: FoodUseCase
     
-    public init() {
-        self.foodInteractor = Injection.init().provideInteractor()
+    public init(interactor: FoodInteractor) {
+        self.foodInteractor = interactor
     }
     
     public func getFavoriteFood() -> Observable<[FoodModel]> {
